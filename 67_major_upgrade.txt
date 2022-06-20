@@ -65,6 +65,8 @@ require github.com/EKI-INDRADI/63-golang-modules-go-say-hello/v2 v2.0.0 // indir
 
 ---------
 
+contoh pattern : https://github.com/gofiber/fiber/tags
+
 ============================================
 
 
