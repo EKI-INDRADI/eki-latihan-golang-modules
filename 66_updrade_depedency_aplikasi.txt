@@ -1,0 +1,39 @@
+// mirip npm i nodejs / npm update
+
+
+
+cukup rubah versi dari go.mod nyas
+
+
+-------------- BEFORE
+
+module github.com/EKI-INDRADI/64-golang-app-say-hello
+
+go 1.18
+
+require github.com/EKI-INDRADI/63-golang-modules-go-say-hello v1.0.0 // indirect
+
+
+-------------- BEFORE
+
+-------------- AFTER
+module github.com/EKI-INDRADI/64-golang-app-say-hello
+
+go 1.18
+
+require github.com/EKI-INDRADI/63-golang-modules-go-say-hello v1.5.0 // indirect
+-------------- AFTER
+
+
+go get  ( otomatis kyk npm i )
+
+
+
+jika salah masukin versi
+require github.com/EKI-INDRADI/63-golang-modules-go-say-hello v1.7.0
+akan muncul invo unknown revision v1.7.0s
+
+
+note : jika update module  (63-golang-modules-go-say-hello), pastikan versinya tidak sama  dgn sebelumnya 
+karena golang ada chace version , jika sudah pernah go get versi 1.0.0 , lalu go get kembali data depedency tidak akan di update (jika ada update dari module nyas)
+
