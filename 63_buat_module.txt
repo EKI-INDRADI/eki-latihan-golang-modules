@@ -1,0 +1,19 @@
+buat repository git https://github.com/EKI-INDRADI/63-golang-modules-go-say-hello
+
+go_say_hello.go ------------------------
+package go_say_hello
+
+func SayHello() string {
+	return "Hello"
+}
+ ------------------------
+
+go mod init github.com/EKI-INDRADI/63-golang-modules-go-say-hello
+
+
+git add .
+git commit -m "create say helo"
+git remote https://github.com/EKI-INDRADI/63-golang-modules-go-say-hello.git
+git push origin master
+git tag v1.0.0 
+git push origin v1.0.0

@@ -1,0 +1,6 @@
+fitur baru golang
+
+go modules = untuk management dependecy golang
+
+
+sebelum ada go modules , pakai go path & copy semua source code orang lain ke golang project

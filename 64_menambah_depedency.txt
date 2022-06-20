@@ -1,0 +1,51 @@
+buat repository baru https://github.com/EKI-INDRADI/64-golang-app-say-hello
+
+
+go mod init github.com/EKI-INDRADI/64-golang-app-say-hello
+
+
+-------------- SEBELUM INJECT 
+module github.com/EKI-INDRADI/64-golang-app-say-hello
+
+go 1.18
+-------------- SEBELUM INJECT 
+
+
+
+
+seperti biasa
+
+push ke git
+
+
+buat main.go -----------------------------------
+
+package main
+
+func main() {
+
+}
+-----------------------------------
+
+
+
+tambah depedency :
+
+go get github.com/EKI-INDRADI/63-golang-modules-go-say-hello       
+
+
+
+-------------- SESUDAH INJECT 
+module github.com/EKI-INDRADI/64-golang-app-say-hello
+
+go 1.18
+
+require github.com/EKI-INDRADI/63-golang-modules-go-say-hello v1.0.0 // indirect
+-------------- SESUDAH INJECT 
+
+
+
+
+
+DONE https://github.com/EKI-INDRADI/64-golang-app-say-hello
+
