@@ -1,0 +1,6 @@
+
+PS D:\_GOPATH_GOLANG_PROJECT\src\_63-golang-modules-go-say-hello> git add .
+PS D:\_GOPATH_GOLANG_PROJECT\src\_63-golang-modules-go-say-hello> git commit -m "update say hello v2"
+PS D:\_GOPATH_GOLANG_PROJECT\src\_63-golang-modules-go-say-hello> git push origin master
+PS D:\_GOPATH_GOLANG_PROJECT\src\_63-golang-modules-go-say-hello> git tag v1.5.0
+PS D:\_GOPATH_GOLANG_PROJECT\src\_63-golang-modules-go-say-hello> git push origin v1.5.0
