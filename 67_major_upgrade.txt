@@ -1,0 +1,77 @@
+// major update (tidak di sarankan, bagusnya di cek dlu compatibility nya 1-1)
+// di usahakan ganti nama module nya jika memang mau major update
+
+
+
+63-golang-modules-go-say-hello ============================================
+
+
+go_say_hello.go -------------------------------
+package go_say_hello
+
+func SayHello(name string) string {
+	return "Hello World Version 3 name : " + name
+}
+-------------------------------
+
+
+rubah module github.com/EKI-INDRADI/63-golang-modules-go-say-Hello
+
+go.mod -------------------------------
+module github.com/EKI-INDRADI/63-golang-modules-go-say-hello/v2
+
+go 1.18
+-------------------------------
+
+
+
+D:\_GOPATH_GOLANG_PROJECT\src\_63-golang-modules-go-say-hello> git add .
+D:\_GOPATH_GOLANG_PROJECT\src\_63-golang-modules-go-say-hello> git push origin master
+D:\_GOPATH_GOLANG_PROJECT\src\_63-golang-modules-go-say-hello> git tag v2.0.0 
+D:\_GOPATH_GOLANG_PROJECT\src\_63-golang-modules-go-say-hello> git push origin v2.0.0
+
+============================================
+
+
+
+
+
+64_golang-app-say-hello ============================================
+
+
+
+pastikan rubah nama module nya 
+
+D:\_GOPATH_GOLANG_PROJECT\src\_64_golang-app-say-hello\go.mod
+
+require github.com/EKI-INDRADI/63-golang-modules-go-say-hello/v2 v2.0.0 
+
+
+
+lalu go
+
+go get github.com/EKI-INDRADI/63-golang-modules-go-say-hello/v2
+
+
+
+
+
+
+go.mod ---------
+module github.com/EKI-INDRADI/64-golang-app-say-hello
+
+go 1.18
+require github.com/EKI-INDRADI/63-golang-modules-go-say-hello/v2 v2.0.0 // indirect
+
+---------
+
+============================================
+
+
+
+
+
+
+
+
+
